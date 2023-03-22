@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-// import { addContact } from "redux/contactSlice";
 import { ContactFormWrap, InputWrap, Button } from "./ContactForm.styled";
 import { nanoid } from 'nanoid';
 import { getContacts } from "redux/selectors";
@@ -29,12 +28,6 @@ export function ContactForm() {
    const name = event.currentTarget.name.value;
    const number = event.currentTarget.number.value;
    
-  //  const contact = {
-  //   id: nanoid(),
-  //   name: name,
-  //   number: number,
-  //  };
-
    const isOldContact = contacts.find((contact) => contact.name === name);
    if (isOldContact) {
     toast.error(`${name} is already in contacts`);

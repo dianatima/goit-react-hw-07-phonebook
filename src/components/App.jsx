@@ -5,7 +5,6 @@ import { ContactForm } from "./ContactForm";
 import { ContactList } from "./ContactList";
 import { Filter } from "./Filter";
 import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import PropTypes from "prop-types";
 import { getIsLoading, getError } from 'redux/selectors';
 import { Loader } from './Loader/Loader';
@@ -36,4 +35,3 @@ App.propTypes = {
     filter: PropTypes.string.isRequired,
   }),
 };
-// toast.error(error.message)

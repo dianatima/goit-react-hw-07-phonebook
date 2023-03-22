@@ -36,15 +36,3 @@ export const deleteContact = createAsyncThunk(
     }
   }
 );
-
-// export const addContact = createAsyncThunk(
-//     "contacts/addContact",
-//     async (text, thunkAPI) => {
-//       try {
-//         const response = await axios.post("/tasks", { text });
-//         return response.data;
-//       } catch (e) {
-//         return thunkAPI.rejectWithValue(e.message);
-//       }
-//     }
-//   );
